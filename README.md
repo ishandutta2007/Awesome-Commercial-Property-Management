@@ -67,7 +67,7 @@ Below is a comparative breakdown of top commercial property management software 
 
 ## 🔓 Open-Source GitHub Projects 🌟
 
-Below are notable open-source property management systems (PMS), computer-aided facility management (CAFM) tools, enterprise resource planning (ERP) modules, and real estate developer frameworks sorted by GitHub Stars_Count in descending order.
+Below are notable open-source property management systems (PMS), computer-aided facility management (CAFM) tools, enterprise resource planning (ERP) modules, and real estate developer frameworks sorted by GitHub_Stars_Count in descending order.
 
 | Project Name | GitHub_Stars & Stargazers Link | Description & Primary Use Case | License |
 | :--- | :--- | :--- | :--- |
