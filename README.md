@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Commercial-Property-Management"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Commercial-Property-Management?style=social" alt="GitHub stars"/></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Commercial-Property-Management"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Commercial-Property-Management?style=social" alt="GitHub_Stars"/></a>
   <a href="https://github.com/ishandutta2007/Awesome-Commercial-Property-Management/fork"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Commercial-Property-Management?style=social" alt="GitHub forks"/></a>
   <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
 </p>
@@ -67,9 +67,9 @@ Below is a comparative breakdown of top commercial property management software 
 
 ## 🔓 Open-Source GitHub Projects 🌟
 
-Below are notable open-source property management systems (PMS), computer-aided facility management (CAFM) tools, enterprise resource planning (ERP) modules, and real estate developer frameworks sorted by GitHub star count in descending order.
+Below are notable open-source property management systems (PMS), computer-aided facility management (CAFM) tools, enterprise resource planning (ERP) modules, and real estate developer frameworks sorted by GitHub Stars_Count in descending order.
 
-| Project Name | Stars & Stargazers Link | Description & Primary Use Case | License |
+| Project Name | GitHub_Stars & Stargazers Link | Description & Primary Use Case | License |
 | :--- | :--- | :--- | :--- |
 | **[Odoo Core & Real Estate](https://github.com/odoo/odoo)** 🏢 | [![Odoo Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers) | Open-source enterprise ERP with extensive suite of real estate, maintenance, lease billing, and facility modules. | LGPL-3.0 |
 | **[ERPNext](https://github.com/frappe/erpnext)** 📐 | [![ERPNext Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers) | Full-fledged open ERP featuring property management modules, unit leasing, maintenance work orders, and accounting. | GPL-3.0 |
