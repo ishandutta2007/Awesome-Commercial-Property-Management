@@ -1,0 +1,109 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="50%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#311042"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="50%" stop-color="#818cf8"/>
+      <stop offset="100%" stop-color="#c084fc"/>
+    </linearGradient>
+    <linearGradient id="building-grad" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#1e293b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.9"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    <style>
+      .title { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 800; font-size: 42px; fill: #ffffff; }
+      .subtitle { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 500; font-size: 20px; fill: #94a3b8; }
+      .tag { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; font-weight: 600; font-size: 13px; fill: #38bdf8; }
+      .pulse-line { stroke-dasharray: 10 15; animation: dash 30s linear infinite; }
+      @keyframes dash {
+        to { stroke-dashoffset: -1000; }
+      }
+      .floating-card { animation: float 6s ease-in-out infinite; }
+      @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" rx="16" fill="url(#bg-grad)"/>
+
+  <!-- Background Animated Lines / Dynamic Tech Grid -->
+  <g opacity="0.25">
+    <path d="M-100,200 L300,-50 M100,350 L600,-100 M400,350 L900,-100 M700,350 L1200,-100 M900,350 L1400,-100" stroke="url(#accent-grad)" stroke-width="2" class="pulse-line"/>
+    <circle cx="200" cy="150" r="180" fill="none" stroke="#38bdf8" stroke-width="1" opacity="0.3"/>
+    <circle cx="200" cy="150" r="120" fill="none" stroke="#818cf8" stroke-width="1" stroke-dasharray="4 8" opacity="0.4"/>
+  </g>
+
+  <!-- Dynamic Background Skyline (CRE Theme) placed behind text -->
+  <g opacity="0.35" transform="translate(750, 60)">
+    <!-- Building 1 -->
+    <rect x="0" y="40" width="70" height="200" rx="4" fill="url(#building-grad)" stroke="#475569"/>
+    <line x1="15" y1="60" x2="15" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+    <line x1="35" y1="60" x2="35" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+    <line x1="55" y1="60" x2="55" y2="220" stroke="#38bdf8" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Building 2 (Tall Sky Scraper) -->
+    <rect x="80" y="0" width="90" height="240" rx="4" fill="url(#building-grad)" stroke="#475569"/>
+    <rect x="95" y="20" width="20" height="15" fill="#38bdf8" opacity="0.8"/>
+    <rect x="135" y="20" width="20" height="15" fill="#818cf8" opacity="0.8"/>
+    <rect x="95" y="50" width="20" height="15" fill="#818cf8" opacity="0.5"/>
+    <rect x="135" y="50" width="20" height="15" fill="#38bdf8" opacity="0.8"/>
+    <rect x="95" y="80" width="20" height="15" fill="#38bdf8" opacity="0.8"/>
+    <rect x="135" y="80" width="20" height="15" fill="#818cf8" opacity="0.5"/>
+    <rect x="95" y="110" width="20" height="15" fill="#818cf8" opacity="0.8"/>
+    <rect x="135" y="110" width="20" height="15" fill="#38bdf8" opacity="0.5"/>
+
+    <!-- Building 3 -->
+    <rect x="180" y="70" width="80" height="170" rx="4" fill="url(#building-grad)" stroke="#475569"/>
+    <circle cx="220" cy="110" r="25" fill="none" stroke="#c084fc" stroke-width="3"/>
+  </g>
+
+  <!-- Foreground Floating Cards (Dynamic Element behind text boundaries) -->
+  <g class="floating-card" opacity="0.85" transform="translate(920, 40)">
+    <rect width="220" height="80" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="20" y="32" font-family="sans-serif" font-size="12" fill="#94a3b8" font-weight="600">PORTFOLIO OCCUPANCY</text>
+    <text x="20" y="60" font-family="sans-serif" font-size="22" fill="#34d399" font-weight="bold">98.4% ▲</text>
+  </g>
+  
+  <g class="floating-card" opacity="0.85" transform="translate(850, 160)" style="animation-delay: -3s;">
+    <rect width="240" height="75" rx="12" fill="#0f172a" stroke="#334155" stroke-width="1.5" filter="url(#glow)"/>
+    <text x="20" y="30" font-family="sans-serif" font-size="12" fill="#94a3b8" font-weight="600">CRE ASSETS MANAGED</text>
+    <text x="20" y="58" font-family="sans-serif" font-size="20" fill="#38bdf8" font-weight="bold">SaaS &amp; Open-Source</text>
+  </g>
+
+  <!-- Title & Subtitle (Foreground - Clean and Crisp) -->
+  <g transform="translate(60, 0)">
+    <!-- Category Pill -->
+    <rect x="0" y="45" width="260" height="30" rx="15" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+    <text x="15" y="65" class="tag">🏢 COMMERCIAL REAL ESTATE TECH</text>
+
+    <!-- Main Title -->
+    <text x="0" y="130" class="title">Commercial Property Management</text>
+    <text x="0" y="170" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="34" fill="url(#accent-grad)">Awesome Ecosystem &amp; Software Guide</text>
+
+    <!-- Subtitle -->
+    <text x="0" y="215" class="subtitle">Curated SaaS Platforms, Enterprise IWMS &amp; Open-Source CRE Solutions</text>
+
+    <!-- Footer Badges in SVG -->
+    <g transform="translate(0, 240)">
+      <rect x="0" y="0" width="110" height="24" rx="6" fill="#334155"/>
+      <text x="12" y="16" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">⚡ CRE SaaS</text>
+
+      <rect x="120" y="0" width="140" height="24" rx="6" fill="#334155"/>
+      <text x="132" y="16" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">🐧 Open-Source PMS</text>
+
+      <rect x="270" y="0" width="130" height="24" rx="6" fill="#334155"/>
+      <text x="282" y="16" font-family="sans-serif" font-size="11" fill="#f8fafc" font-weight="600">📊 Lease Admin</text>
+    </g>
+  </g>
+</svg>
